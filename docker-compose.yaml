@@ -1,0 +1,7 @@
+services:
+  api:
+    build: .
+    container_name: poc-api
+    ports:
+      - "8000:8000"
+    restart: always
