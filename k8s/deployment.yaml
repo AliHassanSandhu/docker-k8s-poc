@@ -24,3 +24,22 @@ spec:
             port: 8000
           initialDelaySeconds: 10
           periodSeconds: 5
+        # Health Checks
+        livenessProbe:
+          httpGet:
+            path: /health           # endpoint exposed by your app
+            port: 8000
+          initialDelaySeconds: 10   # wait 10s before first check
+          periodSeconds: 20         # check every 20s
+          timeoutSeconds: 3         # fail if no response within 3s
+          failureThreshold: 3       # restart container after 3 fails
+        
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 10
+          timeoutSeconds: 2
+          failureThreshold: 3
+          successThreshold: 1  
