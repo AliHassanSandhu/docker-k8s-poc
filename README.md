@@ -188,6 +188,7 @@ readinessProbe:
 - Applies `--no-cache-dir` to reduce build size  
 - Includes `.dockerignore` to exclude unnecessary files  
 - Supports multi-stage builds for cleaner images  
-
 ---
+
+### Documentation : [Docker-Kubernetes-Proof-of-Concept](https://drive.google.com/file/d/1PwlaYAkcJBTFjvzwUEDd1D4Pt1nwP7WX/view?usp=sharing)
   
