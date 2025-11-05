@@ -11,10 +11,8 @@ The goal of this Proof of Concept (POC) is to create a reproducible system where
 
 - FastAPI-based Python microservice  
 - Docker containerization with lightweight image optimization  
-- Kubernetes deployment with automated health checks and scaling  
-- CI/CD-ready structure with GitHub Actions support  
+- Kubernetes deployment with automated health checks and scaling   
 - Makefile for simplified build, test, and deployment commands  
-- Automated versioning and tagging using Git  
 
 ---
 
